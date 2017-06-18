@@ -5,8 +5,6 @@ import org.scalatest.events.Event
 import org.scalatest.events.TestSucceeded
 
 trait KoanSuite extends FunSuite {
-//  override def runTests(testName: Option[String], reporter: Reporter, stopper: Stopper, filter: Filter,
-//                        configMap: Map[String, Any], distributor: Option[Distributor], tracker: Tracker) {
 
     override def runTests(testName: Option[String], args: org.scalatest.Args):org.scalatest.Status = {
     if (testName == null)
@@ -35,8 +33,6 @@ trait KoanSuite extends FunSuite {
         wrappedReporter(event)
       }
     }
-
-    //val stopRequested = stopper
 
     // If a testName is passed to run, just run that, else run the tests returned
     // by testNames.
