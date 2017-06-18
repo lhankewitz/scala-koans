@@ -12,7 +12,7 @@ Because the language evolved some things got deprecated like the
 </ul>
 
 <h2>Prerequisites</h2>
-sbt installed on your computer (I did run sbt 0.13.15)
+<a href="http://www.scala-sbt.org/index.html">sbt</a> installed on your computer (I did run sbt 0.13.15)
 
 <h2>Run</h2>
 Clone or download the repository and run <br/><b>$ sbt enlightMe</b>
