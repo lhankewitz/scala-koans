@@ -6,8 +6,8 @@ import org.junit.runner.RunWith
 
 @RunWith(classOf[JUnitRunner])
 class PathToEnlightenment extends Suite {
-  override def nestedSuites =
-    List(new AboutAsserts,
+  override def nestedSuites = //List().toIndexedSeq
+   List(new AboutAsserts,
     new AboutValAndVar,
     new AboutLiteralBooleans,
     new AboutLiteralNumbers,
@@ -43,5 +43,6 @@ class PathToEnlightenment extends Suite {
     new AboutInteroperability,
     new AboutManifests
   ).toIndexedSeq
+
 
 }
