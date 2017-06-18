@@ -1,0 +1,10 @@
+What do I want todo with this Repo?
+-----------------------------------
+
+TODO check and reduce number of warnings
+TODO add possibility to launch without sbt installed already with a small footprint
+TODO add new Koans for new Features, like string interpolation etc.
+TODO add an exercise "branch" to challenge your brain with existing koans
+TODO add some links and information about koans in general, like origin or other language koans
+TODO add more testing koans for scala test
+
