@@ -15,8 +15,10 @@ PREREQUISITES<p/>
 sbt installed on your computer (I did run sbt 0.13.15)
 
 RUN<p/>
-Clone or download the repository and run <br/><b>$ sbt test</b>
+Clone or download the repository and run <br/><b>$ sbt enlightMe</b>
 <br/> 
+This will start the Koans and stop after running them for change in files.
+<br/>(englightMe is a custom command added in build.sbt)
 
 
 IDE<p/>
