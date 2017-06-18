@@ -77,12 +77,9 @@ class AboutLiteralNumbers extends KoanSuite with Matchers {
   }
 
 
-  koan("""Trick: To distinguish the dot for a method invocation from the
-          |   decimal point in a float or double literal,
-          |   add a space after the literal""") {
+  koan("""Dot after a float or double is only interpreted as such if the dot is followed by a digit number""") {
     3.0.toString should be("3.0")
     3.toString should be("3")
-    (3. toString) should be("3.0")
     (3.0 toString) should be("3.0")
     3d.toString should be("3.0")
   }

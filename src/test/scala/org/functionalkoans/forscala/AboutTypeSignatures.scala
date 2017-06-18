@@ -96,8 +96,11 @@ class AboutTypeSignatures extends KoanSuite with Matchers {
 
   koan("null.asInstanceOf[className] can be used to generate basic default values") {
     null.asInstanceOf[String] should be(null)
-    null.asInstanceOf[Int] should be(0)
-    null.asInstanceOf[Short] should be(0)
+    val sh = null.asInstanceOf[Short]
+    sh should be(0)
+
+    val integer = null.asInstanceOf[Int]
+    integer should be(0)
   }
 
 

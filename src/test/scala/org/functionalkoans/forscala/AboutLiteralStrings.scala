@@ -19,11 +19,12 @@ class AboutLiteralStrings extends KoanSuite with Matchers {
     c.toString should be("a")
   }
 
-  koan("Character Literals can use octal as well") {
-    val d = '\141' //octal for a
-
-    d.toString should be("a")
-  }
+  // octal literals are removed from 2.11 see SI-7618
+//  ignore ("Character Literals can use octal as well") {
+//    val d = '\141' //octal for a
+//
+//    d.toString should be("a")
+//  }
 
   koan("Character Literals can use escape sequences") {
     val e = '\"'
@@ -39,7 +40,7 @@ class AboutLiteralStrings extends KoanSuite with Matchers {
   }
 
   koan("String Literals can contain escape sequences.") {
-    val a = "An \141pple \141 d\141y keeps the doctor \141w\141y"
+    val a = "An \u0061pple \u0061 d\u0061y keeps the doctor \u0061w\u0061y"
     a should be("An apple a day keeps the doctor away")
   }
 

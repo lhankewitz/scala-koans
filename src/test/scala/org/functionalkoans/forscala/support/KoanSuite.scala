@@ -49,11 +49,11 @@ trait KoanSuite extends FunSuite {
           if (failed == false) {
             val koanReporter = new KoanReporter(args.reporter)
 
-            val status:org.scalatest.Status = runTest(test, args.copy(reporter = koanReporter))
+            runTest(test, args.copy(reporter = koanReporter))
             failed = !koanReporter.succeeded
-            status
           }
         }
+        if (failed) FailedStatus else SucceededStatus
     }
   }
 

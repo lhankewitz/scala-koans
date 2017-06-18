@@ -112,7 +112,7 @@ class AboutTraits extends KoanSuite with Matchers {
           |   into concrete classes with it's own state""") {
 
     trait ListLog {
-      var logCache = List[String]()
+      var logCache: List[String] = List[String]()
 
       def log(value: String) {
         logCache = logCache :+ value
@@ -209,7 +209,7 @@ class AboutTraits extends KoanSuite with Matchers {
     }
 
     trait ListLog extends Log {
-      var logCache = List[String]()
+      var logCache: List[String] = List[String]()
 
       override def log(value: String) {
         logCache = logCache :+ value

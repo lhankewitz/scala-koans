@@ -29,7 +29,7 @@ class AboutTypeBounds extends KoanSuite with Matchers {
 
       def get = item
 
-      def contents = manifest.erasure.getSimpleName
+      def contents = manifest.runtimeClass.getSimpleName
     }
 
     val citrusBasket: MyContainer[Citrus] = new MyContainer[Citrus](new Orange)
@@ -51,7 +51,7 @@ class AboutTypeBounds extends KoanSuite with Matchers {
 
       def get = item
 
-      def contents = manifest.erasure.getSimpleName
+      def contents = manifest.runtimeClass.getSimpleName
     }
 
     val citrusBasket: MyContainer[Citrus] = new MyContainer[Citrus](new Orange) //+A allows the assignment
@@ -81,7 +81,7 @@ class AboutTypeBounds extends KoanSuite with Matchers {
 
       def get = item
 
-      def contents = manifest.erasure.getSimpleName
+      def contents = manifest.runtimeClass.getSimpleName
     }
 
     val citrusBasket = new MyContainer[Citrus](new Orange)
@@ -100,7 +100,7 @@ class AboutTypeBounds extends KoanSuite with Matchers {
         item = a
       }
 
-      def contents = manifest.erasure.getSimpleName
+      def contents = manifest.runtimeClass.getSimpleName
     }
 
     val citrusBasket: MyContainer[Citrus] = new MyContainer(new Orange)
@@ -129,7 +129,7 @@ class AboutTypeBounds extends KoanSuite with Matchers {
         item = a
       }
 
-      def contents = manifest.erasure.getSimpleName
+      def contents = manifest.runtimeClass.getSimpleName
     }
 
     val citrusBasket: MyContainer[Citrus] = new MyContainer(new Orange)
@@ -153,7 +153,7 @@ class AboutTypeBounds extends KoanSuite with Matchers {
         item = a
       }
 
-      def contents = manifest.erasure.getSimpleName
+      def contents = manifest.runtimeClass.getSimpleName
     }
 
     val citrusBasket: MyContainer[Citrus] = new MyContainer(new Orange)
@@ -175,7 +175,7 @@ class AboutTypeBounds extends KoanSuite with Matchers {
 
       def get = item
 
-      def contents = manifest.erasure.getSimpleName
+      def contents = manifest.runtimeClass.getSimpleName
     }
 
     val citrusBasket: MyContainer[Citrus] = new MyContainer(new Orange)
@@ -199,7 +199,7 @@ class AboutTypeBounds extends KoanSuite with Matchers {
         item = a
       }
 
-      def contents = manifest.erasure.getSimpleName
+      def contents = manifest.runtimeClass.getSimpleName
     }
 
     val citrusBasket: MyContainer[Citrus] = new MyContainer(new Orange)
@@ -223,7 +223,7 @@ class AboutTypeBounds extends KoanSuite with Matchers {
         item = a
       }
 
-      def contents = manifest.erasure.getSimpleName
+      def contents = manifest.runtimeClass.getSimpleName
     }
 
     val citrusBasket: MyContainer[Citrus] = new MyContainer(new Orange)
@@ -245,7 +245,7 @@ class AboutTypeBounds extends KoanSuite with Matchers {
 
       def get = item
 
-      def contents = manifest.erasure.getSimpleName
+      def contents = manifest.runtimeClass.getSimpleName
     }
 
     val citrusBasket: MyContainer[Citrus] = new MyContainer(new Orange)
